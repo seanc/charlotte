@@ -1,4 +1,4 @@
-# charlotte [![NPM version](https://badge.fury.io/js/charlotte.svg)](https://npmjs.org/package/charlotte) [![Build Status](https://travis-ci.org/seanc/charlotte.svg?branch=master)](https://travis-ci.org/seanc/charlotte)
+# charlotte [![Build Status](https://travis-ci.org/seanc/charlotte.svg?branch=master)](https://travis-ci.org/seanc/charlotte)
 
 > A general purspose bot
 
