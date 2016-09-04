@@ -1,6 +1,6 @@
 # charlotte [![Build Status](https://travis-ci.org/seanc/charlotte.svg?branch=master)](https://travis-ci.org/seanc/charlotte)
 
-> A general purspose bot
+> A general purpose bot
 
 ## Installation & Usage
 

@@ -2,7 +2,7 @@
   "name": "charlotte",
   "author": "Sean Wilson",
   "version": "0.0.0",
-  "description": "A general purspose bot",
+  "description": "A general purpose bot",
   "main": "index.js",
   "repository": {
     "type": "git",
