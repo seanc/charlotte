@@ -8,9 +8,6 @@
     "type": "git",
     "url": "https://github.com/seanc/charlotte"
   },
-  "scripts": {
-    "test": "node test"
-  },
   "private": false,
   "files": [
     "."
