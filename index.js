@@ -1,6 +1,7 @@
 var Eris = require('eris');
 
-var bot = new Eris('MjIwMDEwNjY0MTYzNDA5OTQw.CqaEag.9UhPsI6WPOe2Ur2F89dXd-Pbjzk');
+var config = require('./config');
+var bot = new Eris(config.token);
 var minimist = require('minimist');
 var util = require('./util');
 
