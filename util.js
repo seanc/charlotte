@@ -2,7 +2,8 @@ var Promise = require('bluebird');
 var ini = require('ini');
 var remove = require('remove-markdown');
 var vm = require('vm');
-var config = require('./config');
+var NodeCache = require('node-cache');
+var cache = new NodeCache();
 
 exports.getGuild = function getGuild(bot, guildID) {
   return bot.guilds.find(function(guild) {
@@ -11,8 +12,9 @@ exports.getGuild = function getGuild(bot, guildID) {
 };
 
 exports.getConfig = function getConfig(bot) {
+  console.log(config);
   var hq = bot.guilds.find(function(guild) {
-    return guild.id === config.hq;
+    return guild.id === '221902538679648256';
   });
 
   var config = hq.channels.find(function(channel) {
@@ -32,7 +34,7 @@ exports.getConfig = function getConfig(bot) {
 
 exports.callCommand = function callCommand(bot, name, message, opts) {
   var hq = bot.guilds.find(function(guild) {
-    return guild.id === config.hq;
+    return guild.id === '221902538679648256';
   });
 
   var command = hq.channels.find(function(channel) {
@@ -76,6 +78,7 @@ exports.callCommand = function callCommand(bot, name, message, opts) {
         request: require('request'),
         npmi: require('npmi'),
         require: require,
+        cache: cache,
         debug: function(msg, pretty) {
           if (pretty) {
             msg = '```' + msg + '```';
