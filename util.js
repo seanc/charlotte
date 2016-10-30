@@ -49,6 +49,7 @@ exports.callCommand = function callCommand(bot, name, message, opts) {
         bot: bot,
         message: message,
         opts: opts,
+        args: opts._.slice(1),
         utils: exports,
         remove: remove,
         _: require('lodash'),

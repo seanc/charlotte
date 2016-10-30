@@ -21,7 +21,7 @@
     "bluebird": "^3.4.6",
     "cheerio": "^0.22.0",
     "diagnose": "^0.2.0",
-    "eris": "github:abalabahaha/eris",
+    "eris": "^0.4.0",
     "ini": "^1.3.4",
     "kewler": "^1.0.7",
     "lodash": "^4.15.0",

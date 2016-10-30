@@ -10,12 +10,12 @@ bot.on('ready', function() {
 });
 
 bot.on('messageCreate', function(message) {
+  console.log(`[${message.guild.name}] ${message.author.username}#${message.author.discriminator}: ${message.content}`);
+
   var mentions = message.mentions;
   message.content = message.cleanContent = message.cleanContent
     .replace(/\B@[a-z0-9_-]+/gi, '')
     .trim();
-
-  console.log(message.cleanContent);
 
   if (mentions.length > 0) {
     var mention = mentions[0];
