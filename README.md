@@ -1,13 +1,18 @@
-# charlotte [![Build Status](https://travis-ci.org/seanc/charlotte.svg?branch=master)](https://travis-ci.org/seanc/charlotte)
+# charlotte [![NPM version](https://badge.fury.io/js/charlotte.svg)](https://npmjs.org/package/charlotte) [![Build Status](https://travis-ci.org/seanc/charlotte.svg?branch=master)](https://travis-ci.org/seanc/charlotte)
 
-> A general purpose bot
+> Discord bot
 
-## Installation & Usage
+## Installation
 
 ```sh
-$ git clone
-$ cd charlotte && npm install
-$ node .
+$ npm install --save charlotte
+```
+
+## Usage
+
+```js
+var charlotte = require('charlotte');
+charlotte();
 ```
 
 ## License
