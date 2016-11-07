@@ -1,5 +1,5 @@
 {
-  "name": "charlotte",
+  "name": "charlotte-bot",
   "description": "Discord bot",
   "version": "0.1.0",
   "homepage": "https://github.com/seanc/charlotte",
@@ -10,16 +10,23 @@
   },
   "license": "MIT",
   "files": [
-    "LICENSE"
+    "LICENSE",
+    "classes",
+    "lib",
+    "bin"
   ],
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=6"
   },
   "scripts": {
-    "test": "mocha"
+    "start": "node bin/charlotte"
   },
+  "bin": { "charlotte": "bin/charlotte" },
   "keywords": [
-    "generategenerator"
+    "discord",
+    "bot",
+    "discord bot",
+    "discord.js"
   ],
   "dependencies": {
     "dedent": "^0.6.0",

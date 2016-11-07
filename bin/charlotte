@@ -1,7 +1,4 @@
 #!/usr/bin/env node
 
 const manager = require('../lib/manager')
-
-// const bot = new Bot()
-// start(bot, config)
 manager.spawn(2)

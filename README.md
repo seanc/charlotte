@@ -5,14 +5,13 @@
 ## Installation
 
 ```sh
-$ npm install --save charlotte
+$ npm install -g charlotte
 ```
 
 ## Usage
 
-```js
-var charlotte = require('charlotte');
-charlotte();
+```sh
+$ charlotte
 ```
 
 ## License
