@@ -11,10 +11,10 @@ class EvalCommand extends Command {
     this.name = 'eval'
     this.usage = 'eval <code>'
     this.description = 'Execute javascript and receive the output'
+    this.admin = true
   }
 
   handle (message, args, flags) {
-    if (!this.config.admin.includes(message.author.id)) return
     if (!args.length) return this.message(message.reply('Invalid arguments provided')).deleteAfter(2000)
     try {
       const block = args.join(' ').trim()
